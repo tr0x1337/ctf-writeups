@@ -34,7 +34,7 @@ N = 16364 cycles
 ```
 So I was at this point very excited cause maybe I figured out this challenge. My new plan was to do exactly 16364 cycles of jog then eat, then try to enter. But looping with recv each time might timeout the server. I tried to do it, and I was right, it closes connections if too slow I bet, but nevermind. Instead, build the whole payload as repeated 
 
-(b'3\n' + b'2\n')  * 16364 + b'1\n'
+`(b'3\n' + b'2\n')  * 16364 + b'1\n'`
 
 send it all at once with p.send. Then interactive to see the flag.
 
