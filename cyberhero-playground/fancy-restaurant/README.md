@@ -28,9 +28,9 @@ Stuck for a minute there. And suddenly it hit me. UNSIGNED SHORT FOR WEIGHT ! 16
 
 Starting at 80, each cycle adds 4 net. So to reach 65536, wich mods to 0. 
 
-80 + 4 * n = 65536
+```80 + 4 * n = 65536
 4 * n = 65456
-N = 16364 cycles
+N = 16364 cycles```
 
 So I was at this point very excited cause maybe I figured out this challenge. My new plan was to do exactly 16364 cycles of jog then eat, then try to enter. But looping with recv each time might timeout the server. I tried to do it, and I was right, it closes connections if too slow I bet, but nevermind. Instead, build the whole payload as repeated 
 
